@@ -27,7 +27,6 @@
                             <h5 class="card-title">{{ item.title }}</h5>
                             <p class="card-text">{{ item.author }}</p>
                             <p class="card-text">{{ item.year }}</p>
-                            <p class="card-text">{{ item.genre }}</p>
                         </div>
                     </div>
                 </div>
