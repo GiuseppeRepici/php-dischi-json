@@ -15,16 +15,26 @@
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
     <div id="app">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-4" v-for="(todo,index) in todos" :key="index" class="list-group-item">{{ todo.title }}>
-                    
+                <div class="col-4 my-4" v-for="(todo,index) in todos" :key="index" class="list-group-item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ todo.poster }}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{ todo.title }}</h5>
+                            <p class="card-text">{{ todo.author }}</p>
+                            <p class="card-text">{{ todo.year }}</p>
+                            <p class="card-text">{{ todo.genre }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
